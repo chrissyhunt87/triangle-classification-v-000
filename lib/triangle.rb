@@ -6,5 +6,7 @@ class Triangle
     @length3 = length3
   end
 
-  
+  def kind
+    
+  end
 end
