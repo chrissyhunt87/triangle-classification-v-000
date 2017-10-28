@@ -8,11 +8,11 @@ class Triangle
   end
 
   def kind
-    if length_1 == length_2 && length_2 == length_3
+    if (length_1 == length_2) && (length_2 == length_3)
       :equilateral
-    if length_1 == length_2 != length_3 || length_2 == length_3 != length_1 || length_1 == length_3 != length_2
+    elsif ((length_1 == length_2 ) && (length_2 != length_3)) || ((length_2 == length_3) && (length_3 != length_1)) || ((length_1 == length_3) && (length_3 != length_2))
       :isosceles
-    if length_1 + length_2 <= length_3 || length_2 + length_3 <= length_1 || length_1 + length_3 <= length_2
+    elsif length_1 + length_2 <= length_3 || length_2 + length_3 <= length_1 || length_1 + length_3 <= length_2
       raise TriangleError
     else
       :scalene
