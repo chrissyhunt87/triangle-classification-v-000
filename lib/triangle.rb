@@ -1,16 +1,17 @@
 class Triangle
+  attr_accessor :length_1, :length_2, :length_3
 
-  def initialize(length1, length2, length3)
-    @length1 = length1
-    @length2 = length2
-    @length3 = length3
+  def initialize(length_1, length_2, length_3)
+    @length_1 = length_1
+    @length_2 = length_2
+    @length_3 = length_3
   end
 
   def kind
-
+    if 
   end
 
   class TriangleError < StandardError
-    
+
   end
 end
